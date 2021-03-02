@@ -168,8 +168,8 @@ def restore_toi():
     """
     print_color('+', 'Restoring TOI mode')
     print ''
-    check_and_set_param('SHOW GLOBAL VARIABLES LIKE "wsrep_on";',
-                        'wsrep_on', 'ON', 'SET GLOBAL wsrep_on=ON;')
+    check_and_set_param('SHOW VARIABLES LIKE "wsrep_on";',
+                        'wsrep_on', 'ON', 'SET wsrep_on=ON;')
     check_and_set_param('SHOW VARIABLES LIKE "wsrep_OSU_method";',
                         'wsrep_OSU_method', 'TOI',
                         'SET wsrep_OSU_method="TOI";')
